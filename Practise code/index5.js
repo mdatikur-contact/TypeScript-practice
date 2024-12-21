@@ -1,6 +1,7 @@
-function printUserInfo1(userid) {
-    console.log("user id ".concat(userid));
-}
-printUserInfo1(true);
-printUserInfo1(1010);
-printUserInfo1("1010");
+//generic 
+var printUserInfo1 = function (userid, userAge) {
+    console.log("user id ".concat(userid, ", age =").concat(userAge));
+};
+printUserInfo1(true, 25);
+printUserInfo1(1010, "25");
+printUserInfo1("1010", 25);
